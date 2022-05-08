@@ -1,0 +1,20 @@
+public class rectangle{  
+    public static void main(String args[])  
+    {  
+	float l,b;
+    Scanner sc = new Scanner(System.in);
+	
+    System.out.println("Enter the length:");
+    l = sc.nextline();
+	
+	System.out.println("Enter the breadth:");
+    b = sc.nextline();
+	float ar,pr;
+	ar = l * b;
+	pr = 2 * (l+b);
+	
+	System.out.println("The Area of rectangle is" + ar);
+	System.out.println("The Perimeter of rectangle is" + pr);
+	
+     }  
+}  
