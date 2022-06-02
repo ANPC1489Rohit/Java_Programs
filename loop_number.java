@@ -11,17 +11,3 @@ public class loop_number {
 		}
 	}
 }
-for(i=9;i<=-1;i--)
-{
-	for(j=9;j<=1;j--)
-	{
-		System.out.print(" ");
-	}	
-	for(j=9;j<1*i;j++) 
-	{
-		System.out.print("*");
-	}
-	System.out.println();
-}
-}
-}
