@@ -1,0 +1,82 @@
+package heirarchical_inheritence;
+
+public class Parent
+{
+
+static int a=15,b=8,c;
+public static void add()
+    {
+c=a+b;
+System.out.println("Addition of two numbers:"+c);
+    }
+public static void div()
+{
+c=a/b;
+System.out.println("Division of two numbers:"+c);
+}
+public static void mod()
+{
+c=a%b;
+System.out.println("Mod of two numbers:"+c);
+}
+public static void mul()
+{
+c=a*b;
+System.out.println("multiplication of two number:"+c);
+}
+public static void sub()
+{
+c=a-b;
+System.out.println("substraction of two numbers"+c);
+}
+}
+--------------------------------------------------------------------------------------------------
+package heirarchical_inheritence;
+
+public class Add extends Parent
+{
+    public static void main(String arg[])
+    {
+    add();
+    }
+}
+--------------------------------------------------------------------------------------------
+package heirarchical_inheritence;
+
+public class Sub extends Parent
+{
+   public static void main(String arg[])
+   {
+  sub();
+   }
+}
+
+---------------------------------------------------------------------------------------------------------
+package heirarchical_inheritence;
+
+public class Mul extends Parent
+{
+    public static void main(String arg[])
+    {
+    mul();
+    }
+}
+-------------------------------------------------------------------------------------------------------
+package heirarchical_inheritence;
+
+public class Div extends Parent
+{
+    public static void main(String arg[])
+    {
+    sub();
+    }
+}
+---------------------------------------------------------------------------------------------------------
+package heirarchical_inheritence;
+
+public class Mod extends Parent
+{
+   public static void main(String arg[])
+   {
+  mod();
+   }
