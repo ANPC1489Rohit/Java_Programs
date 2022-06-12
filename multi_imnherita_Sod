@@ -1,0 +1,48 @@
+ackage inheritence;
+
+public class Reverse
+{
+    public static void res()
+    {
+    int num=7654,res=0,rem;
+    while(num!=0)
+    {
+    rem=num%10;
+    res=res*10+rem;
+    num=num/10;
+    }
+    System.out.println(" the reverse of the given number is:"+res);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+
+package inheritence;
+
+public class SOD extends Reverse //sum of digit
+{
+    public static void sod()
+    {
+    int sum=0,m=456,n;
+    while(m>0)
+    {
+    n=m%10;
+    sum=sum+n;
+    m=m/10;
+    }
+    System.out.println("sum of digits:"+sum);
+    }
+}
+
+------------------------------------------------------------------------------------------------------
+
+package inheritence;
+
+public class Display_resSOD extends SOD
+{
+    public static void main(String arg[])
+    {
+    res();
+    sod();
+    }
+}
