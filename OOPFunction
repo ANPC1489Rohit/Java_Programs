@@ -1,0 +1,206 @@
+Function:
+
+import java.util.*;
+class calc	   
+
+	public static void sub()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1,num2,res;
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		
+		res=num1-num2;
+		System.out.println("The Result is ="+res);
+	}
+	public static void mul()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1,num2,res;
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		
+		res=num1*num2;
+		System.out.println("The Result is ="+res);
+	}
+	public static void div()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1,num2,res;
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		
+		res=num1/num2;
+		System.out.println("The Result is ="+res);
+	}
+	public static void mod()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1,num2,res;
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		
+		res=num1%num2;
+		System.out.println("The Result is ="+res);
+	}
+}
+------------------------------
+import java.util.*;
+class fun_demo
+{
+	
+	public static void main(String args[])
+	{
+			add();
+			hello();
+			add();
+	}
+	public static void hello()
+	{
+		System.out.println("Hiii Good Morning :)");
+	}
+	public static int add()
+	{
+		int num1,num2,res;
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		res=num1+num2;
+		System.out.println("The Result is ="+res);
+	return res;
+	}
+}
+
+
+
+---------------------------
+How to call function from one class to another class
+
+class obj_demo
+{
+	public static void main(String args[])
+	{
+		call_fun();
+		
+	}
+	public static void process()
+	{
+		calc obj=new calc();
+		obj.mul();
+	}
+	public static void call_fun()
+	{
+		process();
+	}
+}
+-------------------------------------------------
+Return type in a function:
+
+import java.util.*;
+class fun_demo
+{
+	
+	public static void main(String args[])
+	{
+			add();
+			hello();
+			add();
+	}
+	public static void hello()
+	{
+		System.out.println("Hiii Good Morning :)");
+	}
+	public static int add()
+	{
+		int num1,num2,res;
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		res=num1+num2;
+		System.out.println("The Result is ="+res);
+	return res;
+	}
+}
+
+
+
+--------------------------
+class Pract2
+{
+	public static void main(String args[])
+	{
+/*
+		fun_demo obj=new fun_demo();
+		obj.add();
+		System.out.println("The pract2 class:");
+		System.out.println("The square ="+obj.res*obj.res);
+*/
+		fun_demo obj=new fun_demo();
+		//int pri=obj.add();
+		//System.out.println("The value from add function is  ="+pri);
+		System.out.println("The value from add function is  ="+obj.add());
+
+	}
+}
+----------------------------------
+Two type:
+1:Default 
+2:Para
+
+
+import java.util.*;
+class democalc
+{
+	public static void main(String args[])
+	{
+			accept();
+	}
+	public static void accept()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1,num2;
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		add(num1,num2);
+		sub(num1,num2);
+		mul(num1,num2);
+		sqr(num1);
+
+	}
+	public static void add(int a,int b)
+	{
+		int res=a+b;
+		System.out.println("The add is ="+res);
+	}
+	public static void sub(int a,int b)
+	{
+		int res=a-b;
+		System.out.println("The sub is ="+res);
+	}
+	public static void mul(int a,int b)
+	{
+		int res=a*b;
+		System.out.println("The mul is ="+res);
+	}
+	public static void sqr(int a)
+	{
+		System.out.println("The square is="+ a*a);
+	}
+
+}
+
+
+
+
+
+
+
