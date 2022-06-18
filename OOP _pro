@@ -1,0 +1,157 @@
+
+// WAP to find greater between 2 no,and 3 no and 5 no by using method overloading.
+
+import java.util.Scanner;
+
+public class method_overlo
+{
+
+	public static void main(String[] args)
+	{
+		method_overlo sc =new method_overlo();
+		sc.greater(20,10);
+		sc.greater1(20,30,40);
+		sc.greater(10,20,30,40,50);
+		
+	}
+	
+	public static void greater(int a,int b)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter two 2 number:");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		
+		if(a>b)
+		{
+			System.out.println("greater between 2 number is:" +a);
+		}else
+		{
+			System.out.println("greater between 2 number is :" +b);
+		}
+		
+	}
+	public static void greater1(int a,int b,int c)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter two 3 number:");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		
+		if(a>b)
+		{
+			if(a<c)
+			{
+				System.out.println("  greater 3 number is :"+a);
+			}
+			else
+			{
+				System.out.println("Greater between 3 number is:" +b);
+			}
+		
+		
+	}
+		else
+	{
+		System.out.println("Greater between 3 number is:" +c);
+	}
+	
+	
+}
+
+	public static void greater(int a,int b,int c,int d, int e)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter two 5 number:");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		d=sc.nextInt();
+		e=sc.nextInt();
+		
+		if(a>b)
+		{
+			if(b>c)
+			{
+				System.out.println("  greater  5 number is :"+c);
+			}
+			if(c>d)
+			{
+				System.out.println("Greater between 5 number is:" +d);
+			}
+			if(d>e)
+			{
+				System.out.println("Greater between 5 number is:" +e);
+			}
+		
+		
+	}else
+	{
+		System.out.println("Greater between 5 number is:" +b);
+	}
+	
+	
+}
+}
+____________________________________________________________________
+
+// WAP to used the constructor 1:SI, 2:Sum of digit,3:Greater between 2no.
+
+import java.util.Scanner;
+
+public class Constructor 
+{
+	public static void main(String[] args)
+	{
+	
+		Constructor obj=new Constructor();
+		obj.Sum();
+		obj.Greater();
+		obj.SI();
+	}
+	
+	
+	public void Sum()
+	{
+		int a=45,b=67,sum;
+		sum=a+b;
+		
+		System.out.println("the Sum of number is:" +sum);
+		
+	}
+	
+	public  void Greater()
+	{
+    
+    int num1;
+    int num2;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your two number:");
+		num1 =sc.nextInt();
+		num2=sc.nextInt();
+		
+		if(num1>num2)
+		{
+			System.out.println("greater between 2 number is :"+num1);
+		}
+		else
+		{
+			System.out.println("greater between 2 number is :" +num2);
+		}
+		
+	}
+	
+	public void  SI()
+	{
+		float P = 200, R = 35, T = 5;
+		  
+      
+        float SI = (P * T * R) / 100;
+        System.out.println("Simple interest = " + SI);
+	}
+
+}
+
+
