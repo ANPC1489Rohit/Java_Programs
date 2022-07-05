@@ -1,0 +1,76 @@
+
+public interface bank_demo
+{
+
+	public void deposit();
+}
+-------------------------------------
+
+public interface bank_demo2 
+{
+	public void withdraw();
+
+}
+-------------------------------
+
+import java.util.Scanner;
+
+public class bank_alpa implements bank_demo,bank_demo2
+{
+	Scanner sc=new Scanner(System.in);
+public static void main(String[] args) 
+{
+	bank_alpa obj=new bank_alpa();
+	obj.deposit();
+	obj.withdraw();
+}
+
+	@Override 
+	public void withdraw()
+	{
+		// TODO Auto-generated method stub
+		
+	long amt,i;
+		System.out.println("Enter your amount to withdraw:");
+		amt=sc.nextInt();
+		i=sc.nextInt();
+		if(amt>=i) 
+		{
+		amt=amt-i;
+		}
+		System.out.println("your current amount is :" +amt);
+		
+	}
+
+	@Override
+	public void deposit() 
+	{
+		// TODO Auto-generated method stub
+		int passw=8766;
+		int num;
+		long i,amt=1000;
+		
+		
+		System.out.println("Enter your pasword number:");
+		passw=sc.nextInt();
+		if(passw==8766)
+		{
+			System.out.println("You have successfully login:");
+		}
+		else
+		{
+			System.out.println("Invalid password...");
+		}
+		
+		System.out.println("avilable balance is:" + amt);
+		amt=sc.nextLong();
+		
+		System.out.println("Enter your amount to deposit:");
+		i=sc.nextLong();
+		
+		amt=amt+i;
+		
+		System.out.println("your current balance is:" +amt);
+	}
+
+}
