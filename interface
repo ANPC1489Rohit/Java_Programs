@@ -1,0 +1,116 @@
+
+public interface bank_demo
+{
+
+	public void deposit();
+}
+-----------------------------
+
+public interface bank_demo2 
+{
+	public void withdraw();
+
+}
+-----------------------------
+
+import java.util.Scanner;
+public class Bank_details 
+{
+	private  static void customer_details()
+	{
+		String customer_name;
+		int account_no;
+		int pin_no;
+		double account_balance;
+		double withdraw_balance;
+		double deposit_balance;
+		
+	}
+	
+	  public static void customer ()
+	{
+	    String customer_name;
+	    int account_no;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your name:");
+	    customer_name=sc.nextLine();
+		
+		System.out.println("Enter your account number:");
+	    account_no=sc.nextInt();
+	    
+	    
+		
+	}
+	 
+	
+	 public void account_type()
+		{
+			 int choose=0;
+			 Scanner sc=new Scanner(System.in);
+			System.out.println("choose  your account type:");
+			System.out.println("choose  1 for saving acount:");
+			System.out.println("choose  2 for current account:");
+			System.out.println("choose  3 for check account balance:");
+			choose=sc.nextInt();
+			switch(choose)
+			{
+			case 1:
+			{
+				System.out.println("Saving account");
+				break;
+			}
+			case 2:
+			{
+				System.out.println("current account");
+				break;
+			}
+			case 3:
+			{
+				int i;
+				for(i=0;i>=10;i++) {
+				System.out.println("Check your account balance:");
+				}
+			}
+			}
+		}
+
+	public void withdraw_balance ()
+	 {
+		long amount,balance=0;
+		 Scanner sc=new Scanner(System.in);
+		
+		 System.out.println("Enter your amount to deposit:");
+		 amount=sc.nextLong();	
+		 balance=balance+amount;
+		 
+		 System.out.println("You have sussefully deposit your balance:");
+		 
+		 int withdrawal=0;
+		 int total;
+		 
+		
+		 System.out.println("Enter your amount to withdraw:");
+		 total=sc.nextInt();
+		 
+		 if (total >= withdrawal)
+		 {
+	           
+	 
+	            balance= balance - amount;
+	            System.out.println("Balance after withdrawal: "
+	                               + total);
+		 }
+	 }
+	public static void main(String[] args)
+	{
+		Bank_details obj=new Bank_details();
+		obj.customer();
+		obj.account_type();
+		//obj.deposit_balance();
+		obj.withdraw_balance();
+	}
+}
+
+
+
+
