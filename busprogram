@@ -1,0 +1,152 @@
+package blue_sky;
+
+public class skybus
+{
+	
+	 
+	public void bus()
+  {
+		int busName;
+	 boolean isAc;
+		  int capacity;
+	    String startCity;
+		 String destinationCity;
+  
+  
+
+	public int getbusName() 
+	
+	{
+		return busName;
+	}
+
+    public void setbusName(int busName)
+	{
+		this.busName = busName;
+	}
+
+	public boolean isAc()
+	{
+		return isAc;
+	}
+
+	public void setAc(boolean isAc) 
+	{
+		this.isAc = isAc;
+	}
+
+	public int getCapacity() 
+	{
+		return capacity;
+	}
+
+	public void setCapacity(int capacity)
+	{
+		this.capacity = capacity;
+	}
+
+	public String getStartCity()
+	{
+		return startCity;
+	}
+
+	public void setStartCity(String startCity)
+	{
+		this.startCity = startCity;
+	}
+
+	public String getDestinationCity() 
+	{
+		return destinationCity;
+	}
+
+	public void setDestinationCity(String destinationCity)
+	{
+		this.destinationCity = destinationCity;
+	}
+  
+}
+
+  
+  
+  
+  }
+
+	--------------------------------------------------
+package blue_sky;
+
+public class busService
+{
+
+
+
+
+
+	public void busService1() 
+	{
+		
+		int bus_no=0;
+		 busService obj[] = new  busService[4];
+		
+		obj[0] = new busService("Ratnagiri",40,"Mumbai to Ratnagiri",410);
+		obj[1] = new busService("Mumbai",50,"Mumbai to Pune", 790);
+		obj[2] = new busService("Pune", 45,"pune to Mumbai",540);
+		obj[3] = new busService("Surat",55,"Mumbai to Surat",670);
+	
+	    for(int a=0;a<obj.length;a++)
+		{
+		
+			 obj[a].display();
+			System.out.println(" ");
+		}
+	   
+	     
+	    		
+	}
+	
+
+
+
+	
+	
+}
+
+
+-------------------------------------
+package blue_sky;
+import java.util.Scanner;
+
+public class accepet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		accepet sc=new accepet();
+		sc.accepetData();
+		
+		busService obj2=new busService();
+		obj2.busService1();
+		
+	}
+	
+	public void accepetData()
+	{
+		int i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter  your bus:");
+		i=sc.nextInt();
+		//skybus obj=new skybus();
+		//obj.bus();
+		
+	}
+	
+
+}
+
+	
+	
+    
+  
+	
+
+
