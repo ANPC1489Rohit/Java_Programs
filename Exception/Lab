@@ -1,0 +1,48 @@
+
+program to put input age from user throw user defie exception if entered ageis negative.
+
+package Rohit;
+
+import java.util.Scanner;
+
+public class Ageaccepet  {
+
+	public static void main(String[] args) 
+	{
+		int age;
+		Scanner sc=new Scanner(System.in);
+   System.out.println("Enter your age:");
+   age=sc.nextInt();
+   
+
+	try {
+		if(age<18) {
+			
+			throw new User("Invalid age");
+		}
+		else 
+		{
+			throw new User("Valid age");
+		
+		}
+	}catch(User e){
+		System.out.println(e);
+	}
+	
+	}
+
+}
+
+--------------------------------------------
+
+package Rohit;
+import java.lang.Exception;
+public class User extends Exception {
+   User(String s)
+   {
+	  super(s);
+   }
+	
+
+}
+
