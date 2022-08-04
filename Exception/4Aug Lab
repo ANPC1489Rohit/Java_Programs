@@ -1,0 +1,61 @@
+
+Write a program to accept basic details name,phone number,addres,user_id,password.
+
+
+package Rohit;
+
+import java.util.Scanner;
+
+public class Accepet {
+
+	public static void main(String[] args) {
+		
+		String name;
+		int phone_no;
+		String address;
+		int id;
+		String password="rohits12";
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your name:");
+	    name=sc.nextLine();
+	    
+	    System.out.println("Enter your phone number:");
+	    phone_no=sc.nextInt();
+	    
+	    System.out.println("Enter your address:");
+	    address=sc.nextLine();
+	    
+	   
+	    try {
+	    	System.out.println("Enter user id:");
+		    id=sc.nextInt();
+			int[] a=new int[8];
+			if(a.length<=8)
+			{
+				System.out.println("age is less"+a[a.length]);
+			}
+			else {
+				throw new ArrayIndexOutOfBoundsException("The length is more than Eight");
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	   
+	    if(password=="rohits12")
+	    {
+	    	
+	    	System.out.println("password are match");
+	    }
+	    else {
+	    	System.out.println("password are not match");
+	    }
+	    
+	    
+	    
+	   
+		
+	}
+
+}
