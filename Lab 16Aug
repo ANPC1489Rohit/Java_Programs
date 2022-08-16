@@ -1,0 +1,32 @@
+
+Question 1:
+
+package Rohit;
+
+import java.util.Scanner;
+
+public class Customer {
+
+	public static void main(String[] args) 
+	{
+		String firstName,middleName;
+		String lastName;
+		char name1,name2;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your fistname:");
+		firstName=sc.nextLine();
+		System.out.println("Enter your middlename:");
+		middleName=sc.nextLine();
+		System.out.println("Enter your lastname");
+		lastName=sc.nextLine();
+		
+		System.out.println(firstName+ "" +middleName);
+		name1=firstName.charAt(0);
+		name2=middleName.charAt(0);
+		System.out.println(name1+"."+""+name2+"."+"" +lastName);
+
+		
+
+	}
+
+}
