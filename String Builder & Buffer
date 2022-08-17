@@ -1,0 +1,94 @@
+String builder Program:
+
+
+package string_builder;
+
+public class String_build {
+
+	public static void main(String[] args) 
+	{
+		String_build obj=new String_build();
+		obj.builder();
+	
+	}
+
+	public void builder()
+	{
+		StringBuilder sb=new StringBuilder("Java is a high level Class based object ");
+		sb.append("oop");
+		System.out.println(sb.capacity());
+		sb.ensureCapacity(44);
+		System.out.println(sb);
+		
+		
+		sb.insert(1,"kava");
+		System.out.println(sb);
+		
+		sb.replace(10, 13,"By");
+		System.out.println(sb);
+		
+		sb.delete(1,3);
+		System.out.println(sb);
+		
+		sb.reverse();
+		System.out.println(sb);
+		
+		String s1="Rohit";
+		char ch=s1.charAt(0);
+		System.out.println(ch);
+		
+	
+		System.out.println(s1.length());
+		
+		s1.substring(0, 3);
+		System.out.println(s1);
+		
+	}
+}
+_______________________________________________
+
+String buffer :
+
+package string_buffer;
+
+import string_builder.String_build;
+
+public class Buffer {
+
+	public static void main(String[] args)
+	{
+		Buffer  obj=new Buffer();
+		obj.buffer();
+		
+	}
+
+	
+	public void buffer()
+	{
+		StringBuffer sb=new StringBuffer();
+		sb.append("My name ko is Rohit ");
+		System.out.println(sb.capacity());
+		sb.ensureCapacity(20);
+		System.out.println(sb);
+		
+		
+		sb.insert(0,"I");
+		System.out.println(sb);
+		
+		sb.replace(14,20," Mohit");
+		System.out.println(sb);
+		
+		System.out.println(sb.length());
+		System.out.println(sb.substring(14, 20));
+		sb.delete(4,6);
+		System.out.println(sb);
+		
+		sb.reverse();
+		System.out.println(sb);
+		
+		System.out.println(sb.charAt(14));
+		
+		
+}
+}
+
