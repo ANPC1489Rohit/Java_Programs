@@ -1,0 +1,19 @@
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		String name="Programmer";
+		char[] ch= {'s','i','n','g','h'};
+		System.out.println(name);
+		System.out.println(ch);
+		String s1=new String("Rohit");
+		System.out.println(s1);
+		
+		
+		
+		StringBuilder sb=new StringBuilder("Developer ");
+		sb.append("Singh");
+		System.out.println(sb);
+	}
+
+}
