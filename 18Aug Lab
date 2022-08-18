@@ -79,3 +79,31 @@ Q ) Write a program to swap to string without using third variable.
 	}
 
 }
+----------------------------------------------------
+
+question 3:
+
+
+
+//Write a program to reverse each word of the string.
+
+public class Question_3
+{
+
+	public static void main(String[] args)
+	{
+		/*StringBuffer s1=new StringBuffer( "Hello, My Name Is Rohit singh");
+		
+		System.out.println(s1);
+		
+		s1.reverse();  
+		
+		System.out.println(s1);*/
+		
+		
+		
+
+	}
+
+}
+
