@@ -30,11 +30,39 @@ ________________________________________________________________
 public class Lab1 {
 
 	public static void main(String[] args)
+	package Rohit;
+
+import java.util.Scanner;
+
+public class contains {
+
+	public static void main(String[] args)
 	{
-		String s1="Sanskriti";
-		String s2="Sanskriti";
+		Scanner sc=new Scanner(System.in);
+		String s1,s2,s4,s5;
+		boolean s3=false;
+		System.out.println("Enter first string:");
+		s1=sc.next();
+		s4=s1.toLowerCase();
+		System.out.println("Enter second string:");
 		
-		System.out.println(s1==s2);
+		s2=sc.next();
+		s5=s2.toLowerCase();
+		if(s4.contains(s5))
+		{
+			s3=true;
+			System.out.println(s3);
+		}
+		else {
+			System.out.println("Its not contain");
+		}
+		
+		
+		
+	}
+
+}
+
 		
 	Q )	Write a program to accepet two strng from the user and check if first contain second.
     
@@ -106,4 +134,46 @@ public class Question_3
 	}
 
 }
+
+package Rohit;
+
+import java.util.Scanner;
+
+public class Question {
+
+	public static void main(String[] args)
+	{
+		String s1;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your first string:");
+		s1=sc.next();
+		
+		char[] chString=s1.toCharArray();
+		
+		String strreverse="";
+		
+		for(int a = chString.length - 1; a >= 0; a--) 
+	      {
+	         strreverse = strreverse + chString[a];
+	      } 
+	      
+	      System.out.println("Given string: " + s1);
+	      System.out.println("Reverse String: " + strreverse); 
+         
+	      if(s1.equals(strreverse))
+         {
+        	 System.out.println("Palindrome");
+         }
+         else
+         {
+        	 System.out.println("Not palindrome");
+         }
+          
+		
+	}
+	
+
+}
+
 
