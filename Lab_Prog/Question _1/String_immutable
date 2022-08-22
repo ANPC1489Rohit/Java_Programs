@@ -1,1 +1,19 @@
 
+//Write a program to prove String are immutable.
+
+package accepet_student_detail;
+
+public class String_demo {
+
+	public static void main(String[] args)
+	{
+		String name="Rohit";
+		String name2="Rohit";
+		
+		System.out.println(name==name2);//True
+		
+		name=name+"Priya";
+		System.out.println(name==name2);//False
+	}
+
+}
