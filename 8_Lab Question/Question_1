@@ -1,0 +1,130 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*Q1)write a program to accept name, Email, Phone Number, 
+Percentage from the user and store the data using arraylist.
+Accept name from the user and remove all the data from the list and display the output. 
+and also perform the searching operation with the help of the name.*/
+
+
+
+public class User_details 
+{
+	
+
+	public void accepet()
+	{
+		String name;
+		String email_id;
+       long phone_no;
+		float percent;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your name:");
+		name=sc.nextLine();
+		
+		System.out.println("Enter your email id:");
+		email_id=sc.next();
+		
+		System.out.println("Enter your phone no:");
+		phone_no=sc.nextLong();
+		
+		System.out.println("Enter your score marks :");
+		float score=sc.nextFloat();
+		
+		System.out.println("Enter your total marks :");
+		float total_marks=sc.nextFloat();
+		
+		percent=(float)(score/total_marks)*100;
+		
+		System.out.println("Its your percentage :"+ percent);
+		
+		ArrayList list=new ArrayList<>();
+		list.add(name);
+		list.add(email_id);
+		list.add(phone_no);
+		list.add(score);
+		list.add(total_marks);
+		list.add(percent);
+		
+		System.out.println("User details are :"+list);
+		
+		
+		int search1 = 0;
+		System.out.println("Enter your choosce :");
+		System.out.println("Choose 1 for name /n choose 2 for email id /n choose 3 for phone no /n choose 4 for percentage");
+		
+		search1=sc.nextInt();
+		
+		
+		switch(search1)
+		{
+		case 1:
+			System.out.println("User name are:"+name);
+			break;
+			
+		case 2:
+			System.out.println("User Email Id are:"+email_id);
+			break;
+			
+		case 3:
+			
+			System.out.println("User Phone no are:"+phone_no);
+			break;
+			
+		case 4:
+			System.out.println("User Percentage are:"+percent);
+			break;
+		}
+		
+		System.out.println("yeh "+name+" You want to remove the data for the list so please enter your name:");
+		System.out.println("Enter your name :");
+		name=sc.next();
+		
+		ArrayList Removelist=new ArrayList<>();
+		Removelist.remove(name);
+		Removelist.remove(email_id);
+		Removelist.remove(phone_no);
+		Removelist.remove(score);
+		Removelist.remove(total_marks);
+		Removelist.remove(percent);	
+		
+		System.out.println("You have successfully remove all the data from the list:"+Removelist);
+
+System.out.println("Thank you....");
+		
+	}
+
+	public static void main(String[] args)
+	{
+		User_details obj=new User_details ();
+		obj.accepet();
+
+	}
+
+}
+-------------------------------------------------
+output
+
+
+Enter your name:
+Rohit singh
+Enter your email id:
+singhrohit8036@gmail.com
+Enter your phone no:
+8766930418
+Enter your score marks :
+412
+Enter your total marks :
+500
+Its your percentage :82.4
+User details are :[Rohit singh, singhrohit8036@gmail.com, 8766930418, 412.0, 500.0, 82.4]
+Enter your choice :
+Choose 1 for name /n choose 2 for email id /n choose 3 for phone no /n choose 4 for percentage
+3
+User Phone no are:8766930418
+yeh Rohit singh You want to remove the data for the list so please enter your name:
+Enter your name :
+Rohit singh
+You have successfully remove all the data from the list:[]
+Thank you....
