@@ -1,0 +1,66 @@
+/*Write a program to accepet name,id price.
+Arrange data in Descending order and disply the output
+Using Linkedlist*/
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+
+
+public class Product_details {
+
+	public void details()
+	{
+		String product_name;
+		int id;
+		float price;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your product name :");
+		product_name=sc.next();
+		
+		System.out.println("Enter your product id :");
+		id=sc.nextInt();
+		
+		System.out.println("Enter your product price :");
+		price=sc.nextFloat();
+		
+		LinkedList list=new LinkedList<>();
+		list.add(product_name);
+		list.add(id);
+		list.add(price);
+		
+		System.out.println("This is your product details:"+list);
+		
+	Iterator i=list.descendingIterator();
+	while(i.hasNext())
+	{
+		System.out.println(i.next());
+	}
+	
+	
+	
+	}
+	public static void main(String[] args)
+	{
+		Product_details s1=new Product_details();
+		s1.details();
+
+	}
+
+}
+----------------------------------------------------------------
+Output
+
+
+Enter your product name :
+T-Shirt
+Enter your product id :
+001241
+Enter your product price :
+560
+This is your product details:[T-Shirt, 1241, 560.0]
+560.0
+1241
+T-Shirt
